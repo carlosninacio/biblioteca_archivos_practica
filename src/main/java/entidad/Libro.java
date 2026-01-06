@@ -75,6 +75,10 @@ public class Libro implements Serializable {
                 '}';
     }
 
+    public String escribirLibro() {
+        return idLibro + "," + titulo + "," + autor + "," + anio + "," + genero;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
